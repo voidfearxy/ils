@@ -22,7 +22,7 @@ function checkPassword() {
         password += document.getElementById("input" + i).value;
     }
 
-    if (password === "ilayda") {
+    if (password === "İLAYDA") {
         document.getElementById("login").style.display = "none";
         document.getElementById("logout").style.display = "block";
         clearInputs();
