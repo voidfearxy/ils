@@ -1,0 +1,30 @@
+#cikis-butonu{
+    background: none;
+    outline: none;
+    border: none;
+}
+
+#baslik{
+    position: absolute;
+    top: 20%;
+    text-align: center;
+}
+#login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 96vh;
+}
+input{
+    border: none;
+    outline: none;
+    margin: 10PX;
+    text-align: center;
+    border-bottom: 3px solid gray;
+    transition: all 0.3s ease-in-out;
+}
+
+input:focus {
+    border-bottom: 3px solid gray; /* Focus olduğunda farklı bir renk kullan */
+    transform: scaleX(1.2); /* Border bottom efektini ortadan ikiye açar */
+}
