@@ -3,10 +3,10 @@
     outline: none;
     border: none;
 }
-#frstpg{
-        text-align: center;
-}
 
+#logout-h2-id{
+    text-align: center;
+}
 #baslik{
     position: absolute;
     top: 20%;
