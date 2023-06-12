@@ -1,7 +1,7 @@
 function handleInput(e, index) {
     var input = e.target;
 
-    if (e.keyCode === 8 || e.keyCode === 46) { // Delete veya Backspace tuşuna basılırsa
+    if (e.keyCode === 8 || e.keyCode === 46) {
         input.value = "";
 
         if (index > 0) {
@@ -9,7 +9,7 @@ function handleInput(e, index) {
             previousInput.focus();
         }
     } else {
-        if (input.value.length === 1 && index < 5) { // 4 haneli şifre olduğu için index < 5
+        if (input.value.length === 1 && index < 5) {
             var nextInput = input.nextElementSibling;
             nextInput.focus();
         }
@@ -18,7 +18,7 @@ function handleInput(e, index) {
 
 function checkPassword() {
     var password = "";
-    for (var i = 1; i <= 6; i++) { // 6 haneli şifre olduğu için i <= 6
+    for (var i = 1; i <= 6; i++) {
         password += document.getElementById("input" + i).value;
     }
 
@@ -30,12 +30,11 @@ function checkPassword() {
 }
 
 function logout() {
-    document.getElementById("logout").style.display = "none";
-    document.getElementById("login").style.display = "block";
+    location.reload();
 }
 
 function clearInputs() {
-    for (var i = 1; i <= 6; i++) { // 6 haneli şifre olduğu için i <= 6
+    for (var i = 1; i <= 6; i++) {
         document.getElementById("input" + i).value = "";
     }
 }
@@ -48,7 +47,7 @@ function moveNext(currentInput) {
 }
 
 function checkEnterKey(event) {
-    if (event.keyCode === 13) { // Enter tuşuna basılırsa
+    if (event.keyCode === 13) {
         checkPassword();
     }
 }
